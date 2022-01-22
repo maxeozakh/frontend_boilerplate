@@ -1,5 +1,5 @@
-import * as React from 'react'
-import * as Server from 'react-dom/server'
+import * as React from 'react';
+import { render } from 'react-dom';
 
-let Greet = () => <h1>Hello there</h1>
-console.log(Server.renderToString(<Greet />))
+let Greet = () => <h1>Hello there</h1>;
+render(<Greet />);

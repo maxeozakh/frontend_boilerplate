@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
+    "start": "esbuild app.tsx --bundle --watch --outfile=build/out.js",
     "build": "esbuild app.tsx --bundle --minify --outfile=build/out.js"
   },
   "author": "",
