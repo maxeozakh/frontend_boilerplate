@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest -o",
-    "start": "esbuild index.tsx --bundle --watch --outfile=build/out.js",
-    "build": "esbuild index.tsx --bundle --minify --outfile=build/out.js"
+    "start": "esbuild index.tsx --servedir=local --bundle --outfile=local/index.js",
+    "build": "esbuild index.tsx --bundle --minify --outfile=build/index.js"
   },
   "author": "",
   "license": "ISC",
