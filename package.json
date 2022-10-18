@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest -o",
-    "start": "esbuild index.tsx --servedir=local --bundle --outfile=local/index.js",
-    "build": "esbuild index.tsx --bundle --minify --outfile=build/index.js"
+    "start": "esbuild index.tsx --servedir=local --loader:.png=file --loader:.jpeg=file --loader:.jpg=file --bundle --outdir=local",
+    "build": "esbuild index.tsx --bundle --minify --loader:.png=file --loader:.jpeg=file --loader:.jpg=file --outfile=build/index.js"
   },
   "author": "",
   "license": "ISC",
