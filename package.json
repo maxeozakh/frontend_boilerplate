@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest -o",
-    "start": "esbuild index.tsx --servedir=local --loader:.png=file --loader:.jpeg=file --loader:.jpg=file --bundle --outdir=local",
+    "start": "node watch.js",
     "build": "esbuild index.tsx --bundle --minify --loader:.png=file --loader:.jpeg=file --loader:.jpg=file --outfile=build/index.js"
   },
   "author": "",
